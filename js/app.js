@@ -15,7 +15,7 @@ function getRequest(searchTerm){
 		q: searchTerm,
 		key: 'AIzaSyCX18fh2GihWojMUnf2jjw_19xESuYytDA'
 	};
-	url = 'http://www.youtube.com';
+	url = 'https://www.youtube.com';
 
 	$.getJSON(url, params, function(data){
 		console.log(data);
