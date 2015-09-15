@@ -13,7 +13,8 @@ function getRequest(searchTerm){
 	var params = {
 		part: 'snippet',
 		q: searchTerm,
-		key: 'AIzaSyCX18fh2GihWojMUnf2jjw_19xESuYytDA'
+		key: 'AIzaSyCX18fh2GihWojMUnf2jjw_19xESuYytDA',
+		dataType: 'jsonp'
 	};
 	url = 'https://www.youtube.com';
 
@@ -23,12 +24,12 @@ function getRequest(searchTerm){
 	});
 };
 
-function showResults(results){
+/*function showResults(results){
 	var html ="";
 	$.each(results, function(index, value){
-	  html += '<p>' + value.Title + '</p>';
+	  html += '<p>' + data + '</p>';
 	  console.log(data);
 	  //console.log(value.Title);
 	});
 	$('#search-results').html(html);
-};
+};*/
